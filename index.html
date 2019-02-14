@@ -5,11 +5,14 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <script type="text/javascript" src="fibo.js"></script>
+        <link type="text/css" rel="stylesheet" href="fibo.css">
     </head>
     <body>
         <h1>fibonacci sequence made with JavaScript</h1>
-        <input type="button" value="fibonacci" onclick="add();">
-        <input type="button" value="reset" onclick="reset();">
+        <p id="button">
+            <input type="button" value="fibonacci" onclick="add();">
+            <input type="button" value="reset" onclick="reset();">
+        </p>
         <div id="fibo">0</div>
         <div id="elementNumber">0</div>
         <div id="usagi"></div>

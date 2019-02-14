@@ -2,3 +2,7 @@ img {
     height: 50px;
     width: 50px;
 }
+
+h1, #button, #fibo, #elementNumber, #usagi{
+    text-align: center;
+}
