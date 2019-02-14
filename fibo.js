@@ -1,5 +1,4 @@
 var count = 0;
-var fibo = 0;
 
 function fibonacci(n) {
     switch(n) {
@@ -12,23 +11,18 @@ function fibonacci(n) {
     }
 }
 
-var j = 0;
+
 function add(){
     count++;
     document.getElementById("usagi").innerHTML = "";
     document.getElementById("elementNumber").innerHTML = count;
     document.getElementById("fibo").innerHTML = fibonacci(count);
-    //for (j = 1; j < count; j++) {
-        //document.getElementById("fibo").innerHTML = fibonacci(j);  
-    //}
     for (var i = 0; i < fibonacci(count); i++) {
         var img = document.createElement("img");
         img.setAttribute("src", "usagi_a.png");
         img.style.height = '30px';
         img.style.width = '25px';
         document.getElementById("usagi").appendChild(img);
-        //var num = document.createElement("p");
-        //num.innerHTML = fibo
     }
 }
 
