@@ -1,4 +1,4 @@
-let global_counter = 0;
+let globalCounter = 0;
 
 const fibonacci = (n) => {
     switch(n) {
@@ -13,11 +13,11 @@ const fibonacci = (n) => {
 
 
 const add = () => {
-    global_counter++;
+    globalCounter++;
     document.getElementById("usagi").innerHTML = "";
-    document.getElementById("elementNumber").innerHTML = global_counter;
-    document.getElementById("fibo").innerHTML = fibonacci(global_counter);
-    for (let i = 0; i < fibonacci(global_counter); i++) {
+    document.getElementById("elementNumber").innerHTML = globalCounter;
+    document.getElementById("fibo").innerHTML = fibonacci(globalCounter);
+    for (let i = 0; i < fibonacci(globalCounter); i++) {
         let img = document.createElement("img");
         img.setAttribute("src", "./images/usagi_a.png");
         img.style.height = '30px';
@@ -27,8 +27,15 @@ const add = () => {
 }
 
 const reset = () => {
-    global_counter = 0;
+    globalCounter = 0;
     document.getElementById("elementNumber").innerHTML = "0";
     document.getElementById("fibo").innerHTML = "0";
     document.getElementById("usagi").innerHTML = "";
+}
+
+module.exports = {
+    globalCounter: globalCounter,
+    fibonacci: fibonacci,
+    add: add,
+    reset: reset,
 }
