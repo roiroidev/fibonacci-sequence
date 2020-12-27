@@ -1,0 +1,19 @@
+{
+  "name": "fibonacci-sequence",
+  "version": "1.0.0",
+  "description": "フィボナッチ数列のアプリ ボタンをクリックする度にうさぎが増えていく なお，うさぎの親と子の区別なし",
+  "main": "fibo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rrih/fibonacci-sequence.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rrih/fibonacci-sequence/issues"
+  },
+  "homepage": "https://github.com/rrih/fibonacci-sequence#readme"
+}
